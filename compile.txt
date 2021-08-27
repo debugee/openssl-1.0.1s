@@ -1,0 +1,25 @@
+运行configure：
+perl Configure VC-WIN64A no-asm 或 perl Configure debug-VC-WIN64A no-asm
+
+创建Makefile文件：注意路径中的斜线。
+ms\do_win64a
+
+编译动态库：
+nmake -f ms\ntdll.mak
+
+编译静态库：
+nmake -f ms\nt.mak
+
+
+
+运行configure：
+perl Configure VC-WIN32 no-asm 或 perl Configure debug-VC-WIN32 no-asm
+
+创建Makefile文件：注意路径中的斜线。
+ms\do_ms
+
+编译动态库：
+nmake -f ms\ntdll.mak
+
+编译静态库：
+nmake -f ms\nt.mak
